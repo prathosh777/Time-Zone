@@ -247,12 +247,18 @@ button[type="submit"]:hover {
   color: white;
   border-radius: 10px;
   margin-bottom: 2rem;
+  padding: 25px 10px;
 }
 .h11{
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;margin-left: 120px;
+  width: 500px;
+  padding: 7px 0;
+  border-radius: 10px;
 }
 .test{
   color: white;
+  text-align: center;
+ 
 }
 @media (max-width: 768px) {
   .contact-page {

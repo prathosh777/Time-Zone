@@ -11,7 +11,7 @@ const Hero = () => {
           className="max-w-sm rounded-lg shadow-2xl"
         /> */}
         <div className="test">
-          <h1 className="h11 text-5xl font-bold">World Time Zones!!</h1>
+          <h1 className="h11 text-5xl font-bold bg-black">World Time Zones!!</h1>
           <p className="py-6 text-black pp">
                    The Time Zones Project is a React-based web application that allows
             users to view and search for countries along with their current
