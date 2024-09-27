@@ -14,6 +14,9 @@ body {
   /* background: linear-gradient(  rgb(64, 217, 247),rgb(121, 207, 250), rgb(121, 207, 250)); */
   /* border: 15px solid #34afee; */
 }
+.txt{
+  list-style: none;
+}
 .card {
   background-color: #555555;
   color: aliceblue;

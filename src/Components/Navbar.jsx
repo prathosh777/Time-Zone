@@ -15,12 +15,12 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         <ul>
        
 
-          <li className=" ">
+          <li className="txt ">
             <Link className="li-class link-class btn" to="/Complete">
               Home
             </Link>
           </li>
-          <li className="">
+          <li className="txt">
             <Link className="li-class link-class btn" to="/Contact">
               Contact
             </Link>
