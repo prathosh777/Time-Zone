@@ -1,4 +1,4 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -100,7 +100,7 @@ body {
   margin-left: 20px;
   /* margin: auto; */
   width: 80px;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 .link-class {
   text-decoration: none;
