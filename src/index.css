@@ -81,6 +81,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 92vh;
+  /* border-bottom: #1e1e1e 5px solid; */
   z-index: 1000;
   /* background: linear-gradient(to top, #232027, #555555); */
   /* background: linear-gradient(to right, #232027,#ff5722); */
@@ -115,9 +116,11 @@ body {
   text-align: center;
   font-size: large;
 }
+.card-title{
+height: 7vh;}
 .nofound {
-  margin-top: 5vh;
-  margin-bottom: 80vh;
+  /* margin-top: 5vh; */
+  margin-bottom: 20vh;
   margin-left: 77vh;
   text-align: center;
   width: 300px;
@@ -125,17 +128,28 @@ body {
 .footer {
   /* background-color: #34afee; */
   background-color: #555555;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   /* background: linear-gradient(to bottom, #232027, #555555); */
+}
+.foot-txt{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.bottom{
+  margin-top: 10vh;
+
 }
 
 .hero {
-  margin-top: 10vh;
-  height: 10vh;
+  margin-top: 8vh;
+  /* height: 10vh; */
   /* color: rgb(24, 237, 9); */
   background-image: url(./assets/world-map.jpg);
-
-  --tw-border-opacity: 0.5;
+margin-bottom: 0;
+  /* --tw-border-opacity: 0.5; */
 }
 .h1 {
   font-size: 3rem;

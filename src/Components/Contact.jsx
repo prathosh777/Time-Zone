@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
@@ -19,31 +21,62 @@ const ContactPage = () => {
     
     emailjs
       .send(
-        'service_zehhwuy',  // Replace with your service ID
-        'template_rhranf9',  // Replace with your template ID
+        'service_zehhwuy', 
+        'template_rhranf9',
         formData,
-        'WEJFesRXefUHiJUhj'       // Replace with your user ID
+        'WEJFesRXefUHiJUhj'       
       )
       .then((result) => {
         console.log(result.text);
         setIsSubmitted(true);
-        setFormData({ name: '', email: '', message: '' }); // Reset form after submission
+        setFormData({ name: '', email: '', message: '' }); 
       })
       .catch((error) => {
         console.error('Error sending email:', error.text);
       });
   };
 
+  const formVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const buttonVariant = {
+    hover: {
+      scale: .99,
+      transition: {
+        yoyo: 5, // Creates a bouncing effect on hover
+      },
+    },
+    tap: { scale: 0.9 }, // Shrinks a bit when clicked
+  };
+
+  const successVariant = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.7 } },
+  };
+
   return (
     <div className="contact-page">
       <h2>Contact Us</h2>
+
       {isSubmitted ? (
-        <div className="success-message">
+        <motion.div
+          className="success-message"
+          variants={successVariant}
+          initial="hidden"
+          animate="visible"
+        >
           <p>Thank you for reaching out! We'll get back to you soon.</p>
-        </div>
+        </motion.div>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
+        <motion.form
+          onSubmit={handleSubmit}
+          initial="hidden"
+          animate="visible"
+          variants={formVariant}
+        >
+          <motion.div className="form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -53,8 +86,9 @@ const ContactPage = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="form-group">
+          </motion.div>
+
+          <motion.div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -64,8 +98,9 @@ const ContactPage = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="form-group">
+          </motion.div>
+
+          <motion.div className="form-group">
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
@@ -74,9 +109,18 @@ const ContactPage = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
+          </motion.div>
+
+          <motion.button
+            type="submit"
+            variants={buttonVariant}
+            whileHover="hover"
+            whileTap="tap"
+            className="submit-button"
+          >
+            Send Message
+          </motion.button>
+        </motion.form>
       )}
     </div>
   );
