@@ -311,7 +311,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         {/* Dropdown menu for mobile view */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-gray-700 text-white shadow-lg rounded-b-lg">
-            <ul className="flex flex-col items-center space-y-4 py-4">
+            <ul className="zlign items-center space-y-4 py-4">
               <li>
                 <motion.div
                   variants={linkHover}

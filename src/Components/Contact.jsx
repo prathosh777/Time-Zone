@@ -116,7 +116,7 @@ const ContactPage = () => {
             variants={buttonVariant}
             whileHover="hover"
             whileTap="tap"
-            className="submit-button"
+            className="submit-button "
           >
             Send Message
           </motion.button>
