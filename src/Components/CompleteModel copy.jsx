@@ -140,7 +140,7 @@ const countries = [
   { name: "Kazakhstan", timezone: "Asia/Almaty", continent: "Asia" },
   { name: "Kenya", timezone: "Africa/Nairobi", continent: "Africa" },
   { name: "Kiribati", timezone: "Pacific/Tarawa", continent: "Australia" },
-  { name: "Kosovo", timezone: "Europe/Pristina", continent: "Europe" },
+  { name: "Kosovo", timezone: "Europe/Belgrade", continent: "Europe" },
   { name: "Kuwait", timezone: "Asia/Kuwait", continent: "Asia" },
   { name: "Kyrgyzstan", timezone: "Asia/Bishkek", continent: "Asia" },
   { name: "Laos", timezone: "Asia/Vientiane", continent: "Asia" },
@@ -392,7 +392,7 @@ const CompleteModel = () => {
   };
 
   return (
-    <div>
+    <div className="complete-container">
       <Input searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="county-found mb-5">
        

@@ -7,19 +7,15 @@ const SearchInput = ({ searchTerm, setSearchTerm }) => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="input-div"
     >
       <motion.input
-        id="search"
+        id="search"className="search"
         type="text"
         placeholder="Search countries..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{
-          marginBottom: "20px",
-          padding: "10px",
-          width: "600px",
-          textAlign: "center",
-        }}
+       
         whileFocus={{
           scale: 1.1,
           borderColor: "#4caf50",
