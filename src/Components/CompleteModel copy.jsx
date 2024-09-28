@@ -403,7 +403,7 @@ const CompleteModel = () => {
                   filteredCountries.length > 9
                     ? filteredCountries.length
                     : `0${filteredCountries.length} `
-                } Countries were found`
+                } Countries found`
               : `0${filteredCountries.length} Country found `}
           </h3>
         ) : (

@@ -47,7 +47,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
             style={{ display: "inline-block" }}
           >
             <Link className="link-class btn btn-ghost text-xl text-white" to="/">
-              <motion.h1>World Time Zones</motion.h1>
+              <motion.h1 className="nav-head">World Time Zones</motion.h1>
             </Link>
           </motion.div>
         </div>

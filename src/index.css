@@ -290,10 +290,11 @@ button[type="submit"]:hover {
   }
   .navbar {
     width: 100%;
-    bottom: 775px;
+    top: .1px;
   }
   .contact-page {
     padding: 15px;
+    width: 95%;
   }
 
   .contact-page h2 {
@@ -302,6 +303,10 @@ button[type="submit"]:hover {
 
   button[type="submit"] {
     font-size: 14px;
+  }
+  .nav-head{
+    width: 400px;
+    margin-left: -58px;
   }
   .card-container {
     /* height: 30vh; */
@@ -330,7 +335,7 @@ button[type="submit"]:hover {
     /* gap: 0; */
   }
   .footer {
-    width: 127%;
+    width: 100%;
   }
   .input-div {
   }
