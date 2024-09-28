@@ -1,7 +1,9 @@
+import { div } from "framer-motion/client";
 import React from "react";
 
 const Footer = () => {
   return (
+    // div
     <div>
       <footer className="footer text-white p-10">
         <aside>
@@ -20,7 +22,7 @@ const Footer = () => {
         <div className="foot-txt">
           
           <h1>World Time Zones</h1>
-          <h5 className="mt-5 ml-5">Search for the time in every country.</h5>
+          <h5 className="mt-5 ml-5 ggg">Search for the time in every country.</h5>
         </div>
       </footer>
     </div>
