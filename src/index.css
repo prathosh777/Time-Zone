@@ -227,7 +227,7 @@ body {
 button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #009688; /* Primary button color */
+  /* background-color: #009688;  */
   color: #ffffff;
   font-size: 16px;
   border: none;
@@ -237,7 +237,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #00796b; /* Slightly darker on hover */
+  /* background-color: #00796b;  */
 }
 
 .success-message {
@@ -252,7 +252,7 @@ button[type="submit"]:hover {
   color: wheat;
   background-color: #999;
 }
-/* .submit-button {
+.submit-button {
   @apply btn;
   @apply bg-yellow-500;
   @apply hover:bg-yellow-600;
@@ -262,7 +262,11 @@ button[type="submit"]:hover {
   @apply px-6;
   @apply rounded-lg;
   @apply shadow-lg;
-} */
+}
+.back{
+  background-image: url(./assets/world-map-on-blackboard.webp);
+  background-position: center;
+}
 .success-message p {
   font-size: 16px;
 }

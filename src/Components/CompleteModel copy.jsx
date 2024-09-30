@@ -407,7 +407,7 @@ const CompleteModel = () => {
               : `0${filteredCountries.length} Country found `}
           </h3>
         ) : (
-          <h3 className="nofound">No countries were found</h3>
+          <h3 className="nofound">No countries found</h3>
         )}
       </div>
       {isLoading ? (
@@ -445,7 +445,7 @@ const CompleteModel = () => {
                       <h4>{countryTime ? countryTime.date : "Loading..."}</h4>
                       <h3>{countryTime ? countryTime.time : "Loading..."}</h3>
                       <div className="card-actions justify-end">
-                        <div className="badge badge-outline">
+                        <div className="badge mt-5 badge-outline">
                           {country.continent}
                         </div>
                       </div>

@@ -225,12 +225,13 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
 
   const linkHover = {
     hover: {
-      scale: 1.1,
+      scale: 1,
       rotate: 5,
       color: "#FF5733",
+      // background:"black",
       transition: {
         type: "spring",
-        stiffness: 300,
+        // stiffness: 300,
         damping: 15,
       },
     },
@@ -310,7 +311,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
 
         {/* Dropdown menu for mobile view */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-gray-700 text-white shadow-lg rounded-b-lg">
+          <div className="md:hidden absolute top-16 left-0 right-0 back text-white shadow-lg rounded-b-lg">
             <ul className="zlign items-center space-y-4 py-4">
               <li>
                 <motion.div
@@ -319,7 +320,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
                   whileTap="tap"
                   style={{ display: "inline-block" }}
                 >
-                  <Link className="li-class link-class btn" to="/Complete">
+                  <Link className="li-class link-class btn bg-black" to="/Complete">
                     Home
                   </Link>
                 </motion.div>
@@ -331,7 +332,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
                   whileTap="tap"
                   style={{ display: "inline-block" }}
                 >
-                  <Link className="li-class link-class btn" to="/Contact">
+                  <Link className="li-class link-class btn bg-black" to="/Contact">
                     Contact
                   </Link>
                 </motion.div>
