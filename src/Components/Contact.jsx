@@ -45,10 +45,10 @@ const ContactPage = () => {
     hover: {
       scale: .99,
       transition: {
-        yoyo: 5, // Creates a bouncing effect on hover
+        yoyo: 5, 
       },
     },
-    tap: { scale: 0.9 }, // Shrinks a bit when clicked
+    tap: { scale: 0.9 }, 
   };
 
   const successVariant = {
